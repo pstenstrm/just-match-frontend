@@ -13,7 +13,12 @@
     <h3>{{"assignment.assignments.title" | translate}}</h3>
     <div>
         <ul>
-            <li class="job-description">{{ job.attributes.description }}</li>
+            <li class="job-description rtl">
+                {{ job.attributes.description }}
+                <p class="translate-from rtl"><strong>{{'common.translated.from' | translate}}</strong><br>
+                    {{job.attributes.description}}
+                </p>
+            </li>
         </ul>
         <ul>
             <li class="job-location">{{ job.attributes["street"] }} {{ job.attributes["zip"] }}</li>
