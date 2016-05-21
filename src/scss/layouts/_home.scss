@@ -504,6 +504,8 @@
       position: absolute;
       bottom: 30px;
       left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
       transform: translateX(-50%);
     }
   }
